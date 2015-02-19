@@ -7,5 +7,5 @@ Simulator and processor of power traces in the domain of cryptographic smart car
 
 Authors
 =======
-@Petr Švenda (project lead)
-@Rudolf Kvašňovský (implementation)
++Petr Švenda (project lead)
++Rudolf Kvašňovský (implementation)
