@@ -1,7 +1,12 @@
 all: build
 
-build: main.cpp
-	$(CXX) -Wall -o main main.cpp	
+build: $(OBJECTS_MAIN)
+	$(CXX) $(CXXFLAGS) -o $@ $^
+	
+# Automatic rule for all object files in build directory
+%.o: %.cpp
+	$(CXX) $(CXXFLAGS) -c -o $@ $<
+
 clean:
-	rm -f *.a main
+	rm -fr $(OBJECTS_MAIN) $(OBJECTS_TEST)
 	
